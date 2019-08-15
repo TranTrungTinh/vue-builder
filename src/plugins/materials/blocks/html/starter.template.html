@@ -1,0 +1,47 @@
+<div class="section no-pad-bot" id="banner-gradient">
+  <nav class="bg-none" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo white-text">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="white-text" href="#">Navbar Link</a></li>
+        <li><a class="white-text" href="#">Navbar Link 2</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link 2</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="container">
+    <br><br>
+    <h1 class="header center white-text">Starter Template</h1>
+    <div class="row center">
+      <h5 class="header col s12 light white-text">A modern responsive front-end framework based on Material Design</h5>
+    </div>
+    <div class="row center">
+      <a href="#" id="download-button" class="btn-large waves-effect waves-light light-blue">Get Started</a>
+    </div>
+    <br><br>
+  </div>
+</div>
+<style>
+  #banner-gradient {
+    background: #7abcff;
+    background: -moz-linear-gradient(45deg, #7abcff 0, #60abf8 44%, #4096ee 100%);
+    background: -webkit-linear-gradient(45deg, #7abcff 0, #60abf8 44%, #4096ee 100%);
+    background: linear-gradient(45deg, #7abcff 0, #60abf8 44%, #4096ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=1)
+  }
+
+  .bg-none {
+    background: none;
+  }
+
+  nav .brand-logo,
+  nav ul a {
+    color: #444
+  }
+</style>
+<script type="text/javascript">
+  $('.button-collapse').sideNav();
+</script>

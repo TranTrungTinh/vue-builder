@@ -6,7 +6,6 @@
 
 <script>
 import preset from '@/plugins/materials'
-// import tool from 'grapesjs-plugin-ckeditor'
 import save from 'grapesjs-indexeddb'
 
 export default {
