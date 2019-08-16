@@ -37,13 +37,15 @@
     </a-form-item>
     <a-divider />
     <a-form-item>
-      <a-button type="primary" html-type="submit" class="login-form--button" @click.stop.prevent="handleSubmit">
-        Login
-      </a-button>
-      <span class="login-form--register">
-        <nuxt-link to="/" class="link">Register</nuxt-link>
-        <span>if you don't have account</span>
-      </span>
+      <div class="login-form--item">
+        <a-button type="primary" html-type="submit" class="login-form--button" @click.stop.prevent="handleSubmit">
+          Login
+        </a-button>
+        <span class="login-form--register">
+          <nuxt-link to="/" class="link">Register</nuxt-link>
+          <span>if you don't have account</span>
+        </span>
+      </div>
     </a-form-item>
     <!-- <a-form-item>
       <p>Use another service to Log In</p>
@@ -72,7 +74,7 @@ export default {
       const validateFieldsKey = ['email', 'password']
       validateFields(validateFieldsKey, { force: true }, (err, values) => {
         if (!err) {
-          console.log(values)
+          this.$router.push({ path: '/' })
         }
       })
     }
@@ -97,9 +99,9 @@ export default {
     width: 160px;
   }
 
-  &--register {
-    padding-left: 40px;
-  }
+  // &--register {
+  //   padding-left: 40px;
+  // }
 
 }
 </style>

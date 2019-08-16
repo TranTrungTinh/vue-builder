@@ -1,12 +1,14 @@
 <template>
   <div class="container">
-    welcome
+    <project />
   </div>
 </template>
 
 <script>
-
+import { Project } from '@/components/project'
 export default {
-  name: 'Home'
+  components: {
+    Project
+  }
 }
 </script>

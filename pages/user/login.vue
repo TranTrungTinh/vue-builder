@@ -12,6 +12,7 @@
 <script>
 
 export default {
+  layout: 'blank',
   components: {
     Login: () => import('@/components/authentication/login.vue')
   }
