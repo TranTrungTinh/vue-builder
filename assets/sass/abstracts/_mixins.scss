@@ -1,0 +1,49 @@
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin image($width) {
+    display: block;
+    margin: 0 auto;
+    width: $width + px;
+    height: auto;
+    max-width: 100%;
+}
+
+@mixin bg-image($url, $position, $size) {
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+
+// mixin responsive 
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs  {
+        @media only screen and (max-width: $mobile) { @content };    // iphone 6, 7, 8, X, Xs - 376px
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: $mobile-plus) { @content };     // iphone 6, 7 ,8 Plus, Xs Max - 576px
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: $ipad-port) { @content };    // ipad portrain - 768px
+    }
+    @if $breakpoint == lg {
+        @media only screen and (max-width: $ipad-land) { @content };    // ipad landscape - 1024px
+    }
+    @if $breakpoint == xl {
+        @media only screen and (max-width: $desktop) { @content };    // desktop - 1200px
+    }
+    @if $breakpoint == xxl {
+        @media only screen and (max-width: $desktop-large) { @content };    // big desktop - 1440px
+    }
+  }

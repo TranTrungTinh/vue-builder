@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    ["babel-plugin-import", { "libraryName": "ant-design-vue", "libraryDirectory": "lib", "style": true}, "ant-design-vue"],
+    ["@babel/plugin-syntax-dynamic-import"]
+  ]
+}
