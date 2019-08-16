@@ -54,11 +54,13 @@ export default (editor) => {
       id: 'redo',
       className: 'fa fa-repeat',
       command: e => e.runCommand('core:redo'),
-    },{
-      id: cmdImport,
-      className: 'fa fa-download',
-      command: e => e.runCommand(cmdImport),
-    },{
+    },
+    // {
+    //   id: cmdImport,
+    //   className: 'fa fa-download',
+    //   command: e => e.runCommand(cmdImport),
+    // },
+    {
       id: cmdClear,
       className: 'fa fa-trash',
       command: e => e.runCommand(cmdClear),
