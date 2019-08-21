@@ -6,18 +6,18 @@
 
 <script>
 import preset from '@/plugins/materials'
-import save from 'grapesjs-indexeddb'
+// import save from 'grapesjs-indexeddb'
 
 export default {
   name: "app",
   data () {
     return {
       gjsConfigs: {
-        plugins: [preset, save],
+        plugins: [preset],
         pluginsOpts: {
-          [save]: {
-            dbName: 'project'
-          }
+          // [save]: {
+          //   dbName: 'project'
+          // },
         }
       }
     }

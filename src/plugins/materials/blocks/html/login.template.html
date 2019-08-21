@@ -2,13 +2,19 @@
   <div class="container">
     <div class="row">
       <div class="col m12">
-        <h2 class="center-align">Login</h2>
+        <h2 class="center-align">Contact</h2>
         <div class="row">
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
+                <input id="input__name" type="text">
+                <label for="input__name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
                 <input id="input__email" type="email" class="validate">
-                <label for="email">Email</label>
+                <label for="input__email">Email</label>
               </div>
             </div>
             <div class="row">
@@ -18,7 +24,9 @@
               </div>
             </div>
             <div class="row">
-              <button class="col m12 btn btn-large waves-effect waves-light" type="button" id="btn_login">Login</button>
+              <button class="col m12 btn btn-large waves-effect waves-light" type="submit" name="action" id="btn_login">Submit
+                <i class="material-icons right">send</i>
+              </button>
             </div>
           </form>
         </div>

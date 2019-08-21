@@ -87,6 +87,10 @@
 
 .gjs-block:hover {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15); }
+  
+.gjs-four-color-h:hover {
+  color: $primary !important;
+}
 
 #gjs-pn-views-container.gjs-pn-panel {
   padding: 39px 0 0; }

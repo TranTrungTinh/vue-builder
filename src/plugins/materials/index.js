@@ -46,10 +46,7 @@ export default (editor, config) => {
   pluginExport(editor, exportOpts);
 
   // Load components
-  components(editor, {
-    removable: false,
-    editable: false
-  });
+  components(editor);
 
   // Load blocks
   blocks(editor);
@@ -59,5 +56,8 @@ export default (editor, config) => {
 
   // Load panels
   panels(editor);
+
+  // Load styles
+  // styles(editor, config);
 
 };

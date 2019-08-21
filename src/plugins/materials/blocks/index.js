@@ -1,6 +1,8 @@
 import members from './html/members.template.html'
 import starter from './html/starter.template.html'
 import login from './html/login.template.html'
+import sample from './html/sample.template.html'
+
 
 export default (editor) => {
   const bm = editor.BlockManager;
@@ -26,5 +28,13 @@ export default (editor) => {
     category: 'Section',
     content: login,
     attributes: { class: "fa fa-bars" }
+  })
+
+  bm.add('sample', {
+    id: 'sample',
+    label: 'Handlebars',
+    category: 'Section',
+    content: sample,
+    attributes: { class: "fa fa-hand-rock-o" }
   })
 }

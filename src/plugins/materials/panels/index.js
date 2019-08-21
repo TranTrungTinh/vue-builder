@@ -62,7 +62,7 @@ export default (editor) => {
     // },
     {
       id: cmdClear,
-      className: 'fa fa-trash',
+      className: 'fa fa-trash-o',
       command: e => e.runCommand(cmdClear),
     }],
   },{
@@ -75,7 +75,7 @@ export default (editor) => {
     },{
       id: otm,
       command: otm,
-      className: 'fa fa-cog',
+      className: 'fa fa-cogs',
     },{
       id: ola,
       command: ola,

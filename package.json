@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^2.6.5",
     "grapesjs": "^0.14.62",
-    "grapesjs-indexeddb": "^0.1.1",
     "grapesjs-plugin-export": "^1.0.7",
     "vue": "^2.6.10"
   },
